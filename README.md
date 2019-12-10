@@ -4,14 +4,14 @@ A Vectors of Trust Trustmark based on NIST SP 800-63-3 IAL and AA. https://pages
 Mapping
 -------
 
-| NIST 800 63 3 Value | Vectors of Trust Mapping |
-| ------------------- | ------------------------ |
-| IAL 1               | P1                       |
-| IAL 2               | P2                       |
-| IAL 3               | P3                       |
-| AAL 1               | C1                       |
-| AAL 2               | C2                       |
-| AAL 3               | C3                       |
+| NIST SP 800 63 3 Value | Vectors of Trust Mapping |
+| -------- ------------- | ------------------------ |
+| IAL 1                  | P1                       |
+| IAL 2                  | P2                       |
+| IAL 3                  | P3                       |
+| AAL 1                  | C1                       |
+| AAL 2                  | C2                       |
+| AAL 3                  | C3                       |
 
 References
 ----------
