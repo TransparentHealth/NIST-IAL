@@ -1,5 +1,6 @@
 # 800-63-3-Trustmark URL
-A Vectors of Trust Trustmark based on NIST SP 800-63-3 IAL and AA. https://pages.nist.gov/800-63-3/.
+A Vectors of Trust Trustmark based on NIST SP 800-63-3 [IAL](https://doi.org/10.6028/NIST.SP.800-63a)
+and [AAL](https://doi.org/10.6028/NIST.SP.800-63b).
 
 The link to this repository shall be used as the value of the `vtm` claim. For example:
 
@@ -10,17 +11,18 @@ The link to this repository shall be used as the value of the `vtm` claim. For e
 Mapping
 -------
 
-| NIST SP 800 63 3 Value | Vectors of Trust Mapping |
-| ---------------------- | ------------------------ |
-| IAL 1                  | P1                       |
-| IAL 2                  | P2                       |
-| IAL 3                  | P3                       |
-| AAL 1                  | C1                       |
-| AAL 2                  | C2                       |
-| AAL 3                  | C3                       |
+| NIST SP 800 63 3 Value                                      | Vectors of Trust Mapping |
+| ----------------------------------------------------------- | ------------------------ |
+| [IAL1](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | P1                       |
+| [IAL2](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | P2                       |
+| [IAL3](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | P3                       |
+| [AAL1](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | C1                       |
+| [AAL2](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | C2                       
+| [AAL3](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | C3                       |
 
-References
-----------
+
+More References
+---------------
 
 * [NIST SP 800-63-3 Digital Identity Guidelines](https://pages.nist.gov/800-63-3/) 
 * [RFC 8485 Vectors of Trust](https://tools.ietf.org/html/rfc8485)
