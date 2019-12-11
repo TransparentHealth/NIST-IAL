@@ -24,6 +24,6 @@ Mapping
 More References
 ---------------
 
-* [NIST SP 800-63-3 Digital Identity Guidelines](https://pages.nist.gov/800-63-3/) 
+* [NIST SP 800-63-3 Digital Identity Guidelines Homepage](https://pages.nist.gov/800-63-3/) 
 * [RFC 8485 Vectors of Trust](https://tools.ietf.org/html/rfc8485)
 * [OpenID Connect Profile for Consumer Health](https://github.com/TransparentHealth/openid-connect-consumerhealth-profile/blob/master/README.md)
