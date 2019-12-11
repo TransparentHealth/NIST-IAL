@@ -2,8 +2,8 @@
 A [Vectors of Trust Trustmark]((https://tools.ietf.org/html/rfc8485)) based on 
 NIST SP 800-63-3. Specifically:
 
-* Identity Assuance Levels (IAL) as defined in ([Enrollment and Identity Proofing](https://doi.org/10.6028/NIST.SP.800-63a))
-* Autheticator Assurance Levels (AAL) as defined in ([Authentication and Lifecycle Management](https://doi.org/10.6028/NIST.SP.800-63b))
+* Identity Assuance Levels (IAL) as defined in ([NIST SP 800-63A: Enrollment and Identity Proofing](https://doi.org/10.6028/NIST.SP.800-63a))
+* Autheticator Assurance Levels (AAL) as defined in ([NIST SP 800-63B: Authentication and Lifecycle Management](https://doi.org/10.6028/NIST.SP.800-63b))
 
 Mapping
 -------
