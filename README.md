@@ -1,7 +1,7 @@
 # 800-63-3-Trustmark URL
 
 The README in this repository is a [Vectors of Trust Trustmark](https://tools.ietf.org/html/rfc8485) based on 
-[NIST SP 800-63-3 Digital Identity Guidelines](https://pages.nist.gov/800-63-3/). It was created as part of an effort to establish a best practice for sharing digital identities in a healthcare setting. It is designed for organization who are operating or implementing an [OpenID Connect](https://openid.net/connect/) Identity Providers(IdP).  While designed with US healthcare in mind, it is not healthcare specific.  The [URL to this repository serves](https://github.com/TransparentHealth/800-63-3-trustmark/master/README.md) as the trustmark itself.
+[NIST SP 800-63-3 Digital Identity Guidelines](https://pages.nist.gov/800-63-3/). It was created as part of an effort to establish a best practice for sharing digital identities in a healthcare setting. It is designed for organization who are operating or implementing an [OpenID Connect](https://openid.net/connect/) Identity Providers(IdP).  While designed with US healthcare in mind, it is not healthcare specific.  The [URL](https://github.com/TransparentHealth/800-63-3-trustmark/master/README.md) to this file serves as the trustmark itself.
 
 Scope
 -----
