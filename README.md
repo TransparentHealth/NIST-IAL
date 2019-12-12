@@ -11,25 +11,25 @@ Scope
 
 
 
-Trustmark
----------
+Trustmark Details
+-----------------
 
-| Identity Assuance Level `IAL` Value                         | Vectors of Trust Value |
-| ----------------------------------------------------------- | ---------------------- |
-| [IAL1](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | [P1](https://tools.ietf.org/html/rfc8485#section-2.1)                  
-| [IAL2](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | [P2](https://tools.ietf.org/html/rfc8485#section-2.1)                      
-| [IAL3](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | [P3](https://tools.ietf.org/html/rfc8485#section-2.1)                      |
-
-| Autheticator Assurance Level `AAL` Value                    | VoT Credential `C` Value |
-| ----------------------------------------------------------- | ------------------------ |
-| [AAL1](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C1](https://tools.ietf.org/html/rfc8485#section-2.2)                   
-| [AAL2](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C2](https://tools.ietf.org/html/rfc8485#section-2.2)                   
-| [AAL3](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C3](https://tools.ietf.org/html/rfc8485#section-2.2)                     |
+| Identity Assuance Level `IAL` Value                         | Vot Identity Proofing `P` Value                      |
+| ----------------------------------------------------------- | ---------------------------------------------------- |
+| [IAL1](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | [P1](https://tools.ietf.org/html/rfc8485#section-2.1)|                  
+| [IAL2](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | [P2](https://tools.ietf.org/html/rfc8485#section-2.1)|
+| [IAL3](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | [P3](https://tools.ietf.org/html/rfc8485#section-2.1)|
 
 
+| Autheticator Assurance Level `AAL` Value                    | VoT Credential `C` Value                             |
+| ----------------------------------------------------------- | ---------------------------------------------------- |
+| [AAL1](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C1](https://tools.ietf.org/html/rfc8485#section-2.2)|
+| [AAL2](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C2](https://tools.ietf.org/html/rfc8485#section-2.2)|   
+| [AAL3](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C3](https://tools.ietf.org/html/rfc8485#section-2.2)|                     
 
-How To Use
-----------
+
+How To Use this Trustmark
+-------------------------
 
 Whithin your OpenID Connect Identity Provider, include the folling value in the ink to this repository shall be used as the value of the `vtm` claim. This should be present along with the Verto0rs of Trust claim `vot` as well.  For example, within the payload of your OpenID Connect `id_token` which is provided to relying parties:
 
