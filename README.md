@@ -1,7 +1,7 @@
 # 800-63-3-Trustmark
 
 The README in this repository is a [Vectors of Trust Trustmark](https://tools.ietf.org/html/rfc8485) based on 
-[NIST SP 800-63-3 Digital Identity Guidelines](https://pages.nist.gov/800-63-3/). It was created as part of an effort to establish a best practice for sharing digital identities in a healthcare setting. It is designed for organization who are operating or implementing an [OpenID Connect](https://openid.net/connect/) Identity Providers(IdP).  While designed with US healthcare in mind, it is not healthcare specific.  The [URL](https://github.com/TransparentHealth/800-63-3-trustmark/master/README.md) to this file serves as the trustmark itself.
+[NIST SP 800-63-3 Digital Identity Guidelines](https://pages.nist.gov/800-63-3/). It was created as part of an effort to establish a best practice for sharing digital identities in a healthcare setting. Entities who are operating or implementing an [OpenID Connect](https://openid.net/connect/) Identity Providers(IdP) may use this as an implementation guide.While designed with US healthcare in mind, it is not healthcare specific.  The [URL](https://github.com/TransparentHealth/800-63-3-trustmark/master/README.md) to this file serves as the trustmark itself.
 
 Scope
 -----
@@ -14,17 +14,17 @@ Scope
 Trustmark
 ---------
 
-| Identity Assuance Level (IAL) Value                      | Vectors of Trust Value |
+| Identity Assuance Level `IAL` Value                         | Vectors of Trust Value |
 | ----------------------------------------------------------- | ---------------------- |
-| [IAL1](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | P1                     |
-| [IAL2](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | P2                     |
-| [IAL3](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | P3                     |
+| [IAL1](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | [P1](https://tools.ietf.org/html/rfc8485#section-2.1)                  
+| [IAL2](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | [P2](https://tools.ietf.org/html/rfc8485#section-2.1)                      
+| [IAL3](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | [P3](https://tools.ietf.org/html/rfc8485#section-2.1)                      |
 
-| Autheticator Assurance Level (AAL) Value                    | Vectors of Trust Value |
-| ----------------------------------------------------------- | ---------------------- |
-| [AAL1](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | C1                     |
-| [AAL2](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | C2                     |
-| [AAL3](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | C3                     |
+| Autheticator Assurance Level `AAL` Value                    | VoT Credential `C` Value |
+| ----------------------------------------------------------- | ------------------------ |
+| [AAL1](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C1](https://tools.ietf.org/html/rfc8485#section-2.2)                   
+| [AAL2](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C2](https://tools.ietf.org/html/rfc8485#section-2.2)                   
+| [AAL3](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C3](https://tools.ietf.org/html/rfc8485#section-2.2)                     |
 
 
 
