@@ -1,13 +1,13 @@
 # 800-63-3-Trustmark
 
-The README in this repository is a [Vectors of Trust Trustmark](https://tools.ietf.org/html/rfc8485) based on 
-[NIST SP 800-63-3 Digital Identity Guidelines](https://pages.nist.gov/800-63-3/). It was created as part of an effort to establish a best practice for sharing digital identities in a healthcare setting. Entities who are operating or implementing an [OpenID Connect](https://openid.net/connect/) Identity Providers(IdP) may use this as an implementation guide.While designed with US healthcare in mind, it is not healthcare specific.  The [URL](https://github.com/TransparentHealth/800-63-3-trustmark/master/README.md) to this file serves as the trustmark itself.
+The is a [Vectors of Trust Trustmark](https://tools.ietf.org/html/rfc8485) based on 
+[NIST SP 800-63-3 Digital Identity Guidelines](https://pages.nist.gov/800-63-3/). It was created as part of an effort to establish a best practice for sharing digital identities in a healthcare setting. Entities who are operating or implementing [OpenID Connect](https://openid.net/connect/) Identity Providers(IdP) may use this as an implementation guide. While designed with US healthcare in mind, it is not healthcare specific.  The [URL](https://github.com/TransparentHealth/800-63-3-trustmark/) to this file serves as the trustmark itself. The `vtm`is `https://github.com/TransparentHealth/800-63-3-trustmark/`
 
 Scope
 -----
 
-* Identity Assuance Levels (IAL) as defined in ([NIST SP 800-63A: Enrollment and Identity Proofing](https://doi.org/10.6028/NIST.SP.800-63a))
-* Autheticator Assurance Levels (AAL) as defined in ([NIST SP 800-63B: Authentication and Lifecycle Management](https://doi.org/10.6028/NIST.SP.800-63b))
+* Identity Assuance Levels (IAL) as defined in ([NIST SP 800-63A: Enrollment and Identity Proofing](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63a.pdf))
+* Autheticator Assurance Levels (AAL) as defined in ([NIST SP 800-63B: Authentication and Lifecycle Management](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf))
 
 
 
