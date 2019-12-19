@@ -28,10 +28,10 @@ Trustmark Details
 | [AAL3](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C3](https://tools.ietf.org/html/rfc8485#section-2.2)|                     
 
 
-How To Use this Trustmark
--------------------------
+How To Use this Trustmark as an Identity Provider
+-------------------------------------------------
 
-Whithin your OpenID Connect Identity Provider, include the folling value in the ink to this repository shall be used as the value of the `vtm` claim. This should be present along with the Verto0rs of Trust claim `vot` as well.  For example, within the payload of your OpenID Connect `id_token` which is provided to relying parties:
+Whithin your OpenID Connect Identity Provider, include the folling value in the ink to this repository shall be used as the value of the `vtm` claim. The `vot`claim must also be present. The folowing is an example  OpenID Connect `id_token` which is provided to relying parties updon successful authentication.:
 
     {
     "issuer": "https://oidc.example.com",
@@ -44,7 +44,30 @@ Whithin your OpenID Connect Identity Provider, include the folling value in the 
     ...
     }
 
-See the Vectors of Trust for more information.
+
+See the Vectors of Trust standard itself for more information.
+
+
+How To Use Vectors of Trust as a Relying Party (i.e. within your application)
+----------------------------------------------------------------------------
+
+Isolate the value of  `vot` to make informed decisions on what a user should and shouldn't be allowed to do.
+
+For example, you may want to limit release health information to the users with an Identity proofing of at least 2.
+
+Below is a pseudocode illustation
+
+
+    payload = get_id_token_payload(idp_callback_verified_response)
+
+    if "P2" not in payload["vot"] or "P3" not in payload["vot"]: 
+        # Deny Access or begin an ID proofing event
+    else:
+        # Grant access to a resource.
+        # Example: Allow Access to an authorization endpoint(to get an oauth2 token).
+        # Example: Health data as PDF or JSON
+
+
 
 
 Reference List
