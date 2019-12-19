@@ -34,6 +34,7 @@ How To Use this Trustmark
 Whithin your OpenID Connect Identity Provider, include the folling value in the ink to this repository shall be used as the value of the `vtm` claim. This should be present along with the Verto0rs of Trust claim `vot` as well.  For example, within the payload of your OpenID Connect `id_token` which is provided to relying parties:
 
     {
+    "issuer": "https://oidc.example.com",
     "sub": "12345678901234",
     "given_name": "James",
     "family_name": "Kirk",
