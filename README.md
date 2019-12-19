@@ -14,7 +14,7 @@ Scope
 Trustmark Details
 -----------------
 
-| Identity Assuance Level `IAL` Value                         | Vot Identity Proofing `P` Value                      |
+| Identity Assuance Level `IAL` Value                         | VoT Identity Proofing `P` Value                      |
 | ----------------------------------------------------------- | ---------------------------------------------------- |
 | [IAL1](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | [P1](https://tools.ietf.org/html/rfc8485#section-2.1)|                  
 | [IAL2](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | [P2](https://tools.ietf.org/html/rfc8485#section-2.1)|
