@@ -1,7 +1,15 @@
 # NIST SP 800-63-3-Trustmark
 
 The is a [Vectors of Trust Trustmark](https://tools.ietf.org/html/rfc8485) based on 
-[NIST SP 800-63-3 Digital Identity Guidelines](https://pages.nist.gov/800-63-3/). It was created as part of an effort to establish a best practice for sharing digital identities in a healthcare setting. Entities who are operating or implementing [OpenID Connect](https://openid.net/connect/) Identity Providers(IdP) may use this as an implementation guide. While designed with US healthcare in mind, it is not healthcare specific.  The [URL](https://github.com/TransparentHealth/800-63-3-trustmark/) to this file serves as the trustmark itself. The `vtm`is `https://github.com/TransparentHealth/800-63-3-trustmark/`. This trustmark is managed by Transparent Health is the custodian of this trustmark.  NIST does not curently publish any such trustmark which is why this page exists.
+[NIST SP 800-63-3 Digital Identity Guidelines](https://pages.nist.gov/800-63-3/). It was created as part of an effort to establish a best practice for sharing digital identities in a healthcare setting. Entities who are operating or implementing [OpenID Connect](https://openid.net/connect/) Identity Providers(IdP) may use this as an implementation guide. While designed with US healthcare in mind, it is not healthcare specific. 
+
+
+URL
+---
+
+The [URL](https://github.com/TransparentHealth/800-63-3-trustmark/) to this public Github repository serves as the Trustmark itself.  The custodian of this Trustmark is Transparent Health, a non-profit organization. NIST does not curently publish any such Trustmark which is why this Trstmatk exists.
+
+The value of the `vtm` field shall be `https://github.com/TransparentHealth/800-63-3-trustmark/`.
 
 Scope
 -----
