@@ -7,7 +7,7 @@ This document was created to standardize the way Identity Assurance Levels are c
 The Trustmark Details (Mapping to NIST 800-63-3)
 ------------------------------------------------
 
-| Identity Assuance Level `IAL` Value                         | VoT Identity Proofing `P` Value                      |
+| Identity Assurance Level `IAL` Value                         | VoT Identity Proofing `P` Value                      |
 | ----------------------------------------------------------- | ---------------------------------------------------- |
 | [IAL1](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | [P1](https://tools.ietf.org/html/rfc8485#section-2.1)|                  
 | [IAL2](https://pages.nist.gov/800-63-3/sp800-63a.html#sec4) | [P2](https://tools.ietf.org/html/rfc8485#section-2.1)|
