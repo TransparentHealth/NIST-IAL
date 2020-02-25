@@ -25,9 +25,7 @@ The Trustmark Details (Mapping to NIST 800-63-3)
 URL
 ---
 
-The [URL](https://github.com/TransparentHealth/800-63-3-trustmark/) to this public Github repository serves as the Trustmark itself.  The custodian of this Trustmark is Transparent Health, a 501(c)3 non-profit organization. NIST does not curently publish any such Trustmark which is why this Trustmark exists.
-
-The value of the `vtm` field shall be `https://github.com/TransparentHealth/800-63-3-trustmark/`.
+The [URL](https://github.com/TransparentHealth/800-63-3-trustmark/) to this public Github repository serves as the Trustmark itself.  The value of the `vtm` field shall be `https://github.com/TransparentHealth/800-63-3-trustmark/`.
 
 Scope
 -----
