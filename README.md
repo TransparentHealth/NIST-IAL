@@ -1,26 +1,11 @@
-# NIST SP 800-63-3-Trustmark
+# NIST SP 800-63-3-Trustmark 
 
-The is a [Vectors of Trust Trustmark](https://tools.ietf.org/html/rfc8485) based on 
-[NIST SP 800-63-3 Digital Identity Guidelines](https://pages.nist.gov/800-63-3/). It was created as part of an effort to establish a best practice for sharing digital identities in a healthcare setting. Entities who are operating or implementing [OpenID Connect](https://openid.net/connect/) Identity Providers(IdP) may use this as an implementation guide. While designed with US healthcare in mind, it is not healthcare specific. 
-
-
-URL
----
-
-The [URL](https://github.com/TransparentHealth/800-63-3-trustmark/) to this public Github repository serves as the Trustmark itself.  The custodian of this Trustmark is Transparent Health, a 501(c)3 non-profit organization. NIST does not curently publish any such Trustmark which is why this Trustmark exists.
-
-The value of the `vtm` field shall be `https://github.com/TransparentHealth/800-63-3-trustmark/`.
-
-Scope
------
-
-* Identity Assuance Levels (IAL) as defined in ([NIST SP 800-63A: Enrollment and Identity Proofing](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63a.pdf))
-* Autheticator Assurance Levels (AAL) as defined in ([NIST SP 800-63B: Authentication and Lifecycle Management](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf))
+This document was created to standardize the way Identity Assurance Levels are communicated electronicly.  While designed with OpenID Connect in mind, this can be applied to other systems including LDAP, SAML, or user profile calls using OAuth2.  For example, a user profile request may include the name\value pair `vot`=`P2`, to indicate a user has undergone identity proofing to a NIST Identity Assurance Level of IAL2. Communicating an `IAL` of `1`, `2`, or `3` was the motivation of this document, but it also provides a basic mapping for `AAL`. 
 
 
 
-Trustmark Details
------------------
+The Trustmark Details (Mapping to NIST 800-63-3)
+------------------------------------------------
 
 | Identity Assuance Level `IAL` Value                         | VoT Identity Proofing `P` Value                      |
 | ----------------------------------------------------------- | ---------------------------------------------------- |
@@ -33,11 +18,38 @@ Trustmark Details
 | ----------------------------------------------------------- | ---------------------------------------------------- |
 | [AAL1](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C1](https://tools.ietf.org/html/rfc8485#section-2.2)|
 | [AAL2](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C2](https://tools.ietf.org/html/rfc8485#section-2.2)|   
-| [AAL3](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C3](https://tools.ietf.org/html/rfc8485#section-2.2)|                     
+| [AAL3](https://pages.nist.gov/800-63-3/sp800-63b.html#sec4) | [C3](https://tools.ietf.org/html/rfc8485#section-2.2)|   
+ 
 
 
-How To Use this Trustmark as an Identity Provider
--------------------------------------------------
+URL
+---
+
+The [URL](https://github.com/TransparentHealth/800-63-3-trustmark/) to this public Github repository serves as the Trustmark itself.  The custodian of this Trustmark is Transparent Health, a 501(c)3 non-profit organization. NIST does not curently publish any such Trustmark which is why this Trustmark exists.
+
+The value of the `vtm` field shall be `https://github.com/TransparentHealth/800-63-3-trustmark/`.
+
+Scope
+-----
+
+
+The is a [Vectors of Trust Trustmark](https://tools.ietf.org/html/rfc8485) based on 
+[NIST SP 800-63-3 Digital Identity Guidelines](https://pages.nist.gov/800-63-3/). It was created as part of an effort to establish a best practice for sharing digital identities in a healthcare setting. Entities who are operating or implementing [OpenID Connect](https://openid.net/connect/) Identity Providers(IdP) may use this as an implementation guide. While designed with US healthcare in mind, it is not healthcare specific.
+
+
+* Identity Assuance Levels (IAL) as defined in ([NIST SP 800-63A: Enrollment and Identity Proofing](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63a.pdf))
+* Autheticator Assurance Levels (AAL) as defined in ([NIST SP 800-63B: Authentication and Lifecycle Management](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf))
+
+                  
+
+
+How To Use this Trustmark within an Identity Provider (IdP) You/Your Organization Operate
+-----------------------------------------------------------------------------------------
+
+
+OpenID Connect Provider
+_______________________
+
 
 Whithin your OpenID Connect Identity Provider, include the folling value in the ink to this repository shall be used as the value of the `vtm` claim. The `vot`claim must also be present. The folowing is an example  OpenID Connect `id_token` which is provided to relying parties updon successful authentication.:
 
@@ -52,12 +64,15 @@ Whithin your OpenID Connect Identity Provider, include the folling value in the 
     ...
     }
 
+Other Identity Providers
+________________________
 
-See the Vectors of Trust standard itself for more information.
+
+The `vot` value for identity assurance may also be stored in LDAP, Active Directory, or SAML. The document's only guideance is to use the field name `vot` and to include the value `P1`, `P2`, or `P3`.
 
 
-How To Use Vectors of Trust as a Relying Party (i.e. within your application)
-----------------------------------------------------------------------------
+How To Use This Trustmark as a Relying Party (i.e. as a client )
+----------------------------------------------------------------
 
 Isolate the value of  `vot` to make informed decisions on what a user should and shouldn't be allowed to do.
 
