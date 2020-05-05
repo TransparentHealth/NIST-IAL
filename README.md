@@ -57,7 +57,7 @@ Whithin your OpenID Connect Identity Provider, include the folling value in the 
     "given_name": "James",
     "family_name": "Kirk",
     ...
-    "vot": "P2.C2.A1",
+    "vot": "P2.C2",
     "vtm": "https://github.com/TransparentHealth/800-63-3-trustmark",
     ...
     }
