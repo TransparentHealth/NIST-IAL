@@ -1,9 +1,7 @@
 # NIST SP 800-63-3 (Digital Identity Guidelines) Trustmark 
 
-This document was created to standardize the way Identity Assurance Levels are communicated electronically.  While designed with OpenID Connect in mind, this can be applied to other systems including LDAP, SAML, or user profile calls using OAuth2.  For example, a user profile request may include the name\value pair `vot`=`P2`, to indicate a user has undergone identity proofing to a NIST Identity Assurance Level of IAL2. Communicating an `IAL` of `1`, `2`, or `3` was the motivation of this document, but it also provides a basic mapping for `AAL`.
+This document was created to standardize the way Identity Assurance Levels are communicated electronically.  While designed with OpenID Connect in mind, this can be applied to other systems including LDAP, SAML, or user profile calls using OAuth2.  For example, a user profile request may include the name\value pair `vot`=`P2`, to indicate a user has undergone identity proofing to a NIST Identity Assurance Level of IAL2. Communicating an `IAL` of `1`, `2`, or `3` was the motivation of this document, but it also provides a basic mapping for `AAL`.  See scope and security sections for use and implementation guidance.
 
-
-IMPORTANT SECURITY CONSIDERATION: While communicating IAL is okay within a user profile API call, communicating AAL this way is not.  This is because the userprofile call can be made without the user being present. AAL, therefore, should be communicated within an `id_token` or in some manner verifying that the user is actually present.  The value "C2.P2" is would be appropriate in an `id_token` but not in the response from a user profile endpoint.  In a user profile endpoint, a value of `vot="P2"` would be acceptable, but a value incluing authenticator assurance information (e.g. `vot="P2.C2"`) would not.
 
 
 The Trustmark Details (Mapping to NIST 800-63-3)
@@ -40,7 +38,10 @@ The is a [Vectors of Trust Trustmark](https://tools.ietf.org/html/rfc8485) based
 * Identity Assuance Levels (IAL) as defined in ([NIST SP 800-63A: Enrollment and Identity Proofing](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63a.pdf))
 * Autheticator Assurance Levels (AAL) as defined in ([NIST SP 800-63B: Authentication and Lifecycle Management](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf))
 
-                  
+Security Considerations
+-----------------------
+
+While communicating IAL is acceptable within a user profile API call, communicating AAL in this way should be avoided.  This is because the user profile API call can be made without the user being present. AAL, therefore, should be communicated within an `id_token` or in some manner which verifies  that the user is actually present.  The value "C2.P2" is would be appropriate in an `id_token` but not in the response from a user profile endpoint.  In a user profile endpoint, a value of `vot="P2"` would be acceptable, but a value incluing authenticator assurance information (e.g. `vot="P2.C2"`) should be avoided.
 
 
 How To Use this Trustmark within an Identity Provider (IdP) You/Your Organization Operates
