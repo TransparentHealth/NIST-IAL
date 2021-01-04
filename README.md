@@ -44,8 +44,8 @@ Security Considerations
 While communicating IAL is acceptable within a user profile API call, communicating AAL in this way should be avoided.  This is because the user profile API call can be made without the user being present. AAL, therefore, should be communicated within an `id_token` or in some manner which verifies  that the user is actually present.  The value "C2.P2" is would be appropriate in an `id_token` but not in the response from a user profile endpoint.  In a user profile endpoint, a value of `vot="P2"` would be acceptable, but a value incluing authenticator assurance information (e.g. `vot="P2.C2"`) should be avoided.
 
 
-How To Use this Trustmark within an Identity Provider (IdP) You/Your Organization Operates
------------------------------------------------------------------------------------------
+How To Use this Trustmark within an Identity Provider (IdP) That Your Organization Operates
+-------------------------------------------------------------------------------------------
 
 
 OpenID Connect Provider
