@@ -79,7 +79,7 @@ Isolate the value of  `vot` to make informed decisions on what a user should and
 
 For example, you may want to limit release health information to the users with an Identity proofing of at least 2.
 
-Below is a pseudocode illustation
+Below is a pseudocode illustration:
 
 
     payload = get_id_token_payload(idp_callback_verified_response)
