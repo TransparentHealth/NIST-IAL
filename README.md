@@ -1,6 +1,6 @@
 # NIST SP 800-63-3 (Digital Identity Guidelines) Trustmark 
 
-This document was created to standardize the way Identity Assurance Levels are communicated electronically.  While designed with OpenID Connect in mind, this can be applied to other systems including LDAP, SAML, or user profile calls using OAuth2.  For example, a user profile request may include the name\value pair `vot`=`P2`, to indicate a user has undergone identity proofing to a NIST Identity Assurance Level of IAL2. Communicating an `IAL` of `1`, `2`, or `3` was the motivation of this document, but it also provides a basic mapping for `AAL`.  See scope and security sections for use and implementation guidance.
+This document was created to standardize the way Identity Assurance Levels are communicated electronically.  While designed with OpenID Connect in mind, this can be applied to other systems including LDAP, SAML, or user profile calls using OAuth2.  For example, a user profile request may include the name\value pair `vot`=`P2`, to indicate a user has undergone identity proofing to a NIST Identity Assurance Level of IAL2. Communicating an `IAL` of `1`, `2`, or `3` was the motivation of this document, but it also provides a basic mapping for `AAL`.  See scope and security sections for use and implementation guidance. See https://csrc.nist.gov/publications/detail/sp/800-63/4/draft
 
 
 
