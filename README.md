@@ -1,10 +1,11 @@
-# NIST SP 800-63-3 (Digital Identity Guidelines) Trustmark 
+# NIST SP 800-63 Trustmark for IAL and AAL.
 
-This document was created to standardize the way Identity Assurance Levels are communicated electronically.  While designed with OpenID Connect in mind, this can be applied to other systems including LDAP, SAML, or user profile calls using OAuth2.  For example, a user profile request may include the name\value pair `vot`=`P2`, to indicate a user has undergone identity proofing to a NIST Identity Assurance Level of IAL2. Communicating an `IAL` of `1`, `2`, or `3` was the motivation of this document, but it also provides a basic mapping for `AAL`.  See scope and security sections for use and implementation guidance. See https://csrc.nist.gov/publications/detail/sp/800-63/4/draft
+This document was created to standardize the way Identity Assurance Levels are communicated electronically using the NIST-800-63 revision 4.  
+While designed with OpenID Connect in mind, this profile can be applied in other systems such as OAuth2 user profile, LDAP, and SAML.  For example, a user profile request may include the name\value pair `vot`=`P2`, to indicate a user has undergone identity proofing to a NIST Identity Assurance Level of IAL2. Communicating an `IAL` of `1`, `2`, or `3` was the motivation of this document, but it also provides a basic mapping for `AAL`. See https://csrc.nist.gov/publications/detail/sp/800-63/4/draft
 
 
 
-The Trustmark Details (Mapping to NIST 800-63-3)
+The Trustmark Details (Mapping to NIST 800-63)
 ------------------------------------------------
 
 | Identity Assurance Level `IAL` Value                        | VoT Identity Proofing `P` Value                      |
